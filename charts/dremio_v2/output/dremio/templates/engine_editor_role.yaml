@@ -11,8 +11,8 @@ rules:
 - apiGroups:
   - dremio.com
   resources:
-  - engines
-  - replicas
+  - dremioengines
+  - dremioreplicas
   verbs:
   - create
   - delete
@@ -24,8 +24,8 @@ rules:
 - apiGroups:
   - dremio.com
   resources:
-  - engines/status
-  - replicas/status
+  - dremioengines/status
+  - dremioreplicas/status
   verbs:
   - get
 ---
